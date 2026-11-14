@@ -7,16 +7,20 @@
 ## 当前状态
 
 - 已初始化 Git 仓库。
-- 已创建 GitHub Actions 工作流文件，具体自动化任务尚未配置。
+- 已配置 GitHub Actions 基础检查，包括 README 非空、空白错误及冲突标记检查。
+- 已配置通用 Git 忽略规则、LF 换行和 EditorConfig 文本规范。
 - 项目功能、技术栈、安装方式及使用说明待补充。
 
 ## 目录结构
 
 ```text
 trae_data/
+├── .editorconfig       # 基础文本格式规范
+├── .gitattributes      # Git 文本识别与换行配置
 ├── .github/
 │   └── workflows/
-│       └── main.yml    # GitHub Actions 工作流（待配置）
+│       └── main.yml    # 基础仓库检查
+├── .gitignore          # 通用 Git 忽略规则
 └── README.md           # 项目说明
 ```
 
